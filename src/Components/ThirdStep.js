@@ -5,13 +5,13 @@ export default function ThirdStep() {
   return (
     <div>
         <div>
-            <TextField label="First name" margin="normal" variant="outlined" color="secondary"/>
+            <TextField label="City" margin="normal" variant="outlined" color="secondary"/>
         </div>
         <div>
-            <TextField label="Last name" margin="normal" variant="outlined" color="secondary"/>
+            <TextField label="Landmark" margin="normal" variant="outlined" color="secondary"/>
         </div>
         <div>
-            <TextField label="Contact  Number" margin="normal" variant="outlined" color="secondary"/>
+            <TextField label="Postal Code" margin="normal" variant="outlined" color="secondary"/>
         </div>
         <Button variant="contained" color="primary">Next</Button>
     </div>
