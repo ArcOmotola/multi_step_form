@@ -8,15 +8,17 @@ export default function FirstStep() {
     return (
         <div>
             <div>
-                <TextField label="First name" margin="normal" variant="outlined" color="secondary"/>
+                <TextField label="First name" value={userData['firstname']} onChange={(e) => setUserData({...userData, "firstname" : e.target.value})} margin="normal" variant="outlined" color="secondary"/>
             </div>
             <div>
-                <TextField label="Last name" margin="normal" variant="outlined" color="secondary"/>
+                <TextField label="Last name" value={userData['lastname']} onChange={(e) => setUserData({...userData, "lastname" : e.target.value})} margin="normal" variant="outlined" color="secondary"/>
             </div>
             <div>
-                <TextField label="Contact  Number" margin="normal" variant="outlined" color="secondary"/>
+                <TextField label="Contact  Number" value={userData['contact']} onChange={(e) => setUserData({...userData, "contact" : e.target.value})} margin="normal" variant="outlined" color="secondary"/>
             </div>
-            <Button variant="contained" color="primary" onClick={() => setStep(2)}>Next</Button>
+            <div className='button'>
+                <Button variant="contained" color="primary" onClick={() => setStep(2)}>Next</Button>
+            </div>
         </div>
     )
 }
